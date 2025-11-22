@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 1000px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.input-box button {
+    padding: 12px 25px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-box button:hover {
+    background: #5a6fd6;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    padding: 8px 16px;
+    border: none;
+    background: #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter.active {
+    background: #667eea;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+li .edit-btn {
+    background: #ffc107;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li .delete-btn {
+    background: #e94560;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.footer span {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer button {
+    background: #e94560;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer button:hover {
+    background: #d63850;
+}
